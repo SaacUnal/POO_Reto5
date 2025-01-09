@@ -1,3 +1,5 @@
+from shape import shape
+
 class Triangle(Shape):
   def __init__(self, vertices:list[Point]):
     super().__init__(is_regular=False)
