@@ -1,5 +1,6 @@
-import shape
-class Rectangle(Shape):
+from shape import shape
+
+class Rectangle(shape.Shape):
   def __init__(self, vertices:list[Point]):
     super().__init__(is_regular=False)
 
