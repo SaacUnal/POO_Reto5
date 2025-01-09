@@ -1,4 +1,4 @@
-from shape import shape
+from shape.shape import shape
 
 class Rectangle(shape.Shape):
   def __init__(self, vertices:list[Point]):
