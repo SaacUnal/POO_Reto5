@@ -1,5 +1,5 @@
-from rectangle import Rectangle
-from triangle import Triangle
+from rectangle import Rectangle, Square
+from triangle import Equilateral, Isosceles, Scalene
 
 if __name__ == "__main__":
   square = Square()
