@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
   print("#-------------------------------------------------------------------")
 
-  vertices = [Point(0.5, 1), Point(-5, -5), Point(-1,-7)] #https://www.youtube.com/watch?v=0eyUYbB45fo
+  vertices = [Point(0.5, 1), Point(-5, -5), Point(-1,-7)] # https://www.youtube.com/watch?v=0eyUYbB45fo
   isosceles = Isosceles(vertices)
   print(isosceles.compute_area())
   print(isosceles.compute_perimeter())
@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
   print("#-------------------------------------------------------------------")
 
-  vertices = [Point(2.5, 5), origen, Point(0, 5)]
+  vertices = [Point(2.5, 5), origen, Point(0, 5)] # https://www.youtube.com/watch?v=7ZQgjbhyxFk
   scalene = Scalene(vertices)
   print(scalene.compute_area())
   print(scalene.compute_perimeter())

@@ -1,6 +1,6 @@
 from shape.shape import Shape, Point
 
-# Teniendo en cuenta que el primer vertice es el apex y los otros dos las bases
+# Teniendo en cuenta que el primer vertice es el apice y los otros dos las bases
 class Triangle(Shape):
   def __init__(self, vertices:list[Point], is_regular:bool):
     super().__init__(vertices, is_regular)
