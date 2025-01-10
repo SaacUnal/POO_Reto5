@@ -36,6 +36,10 @@ class Scalene(Triangle):
   def __init__(self, vertices:list[Point]):
     super().__init__(vertices, is_regular=False)
 
+  def compute_height(self): # Sistema de doble ecuacion
+    height = 0
+    return height
+  
   def compute_perimeter(self):
     perimeter = self.edges[0].length + self.edges[1].length + self.edges[2].length
     return perimeter
