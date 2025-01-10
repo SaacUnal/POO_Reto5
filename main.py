@@ -5,7 +5,7 @@ from triangle import Equilateral, Isosceles, Scalene
 if __name__ == "__main__":
   origen = Point(0,0)
 
-  vertices = [origen, Point(), Point(), Point()]
+  vertices = [origen, Point(5,0), Point(5,5), Point(0,5)]
   square = Square(vertices)
   print(square.compute_area())
   print(square.compute_perimeter())
@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
   print("#-------------------------------------------------------------------")
 
-  vertices = [origen, Point(), Point(), Point()]
+  vertices = [origen, Point(10, 0), Point(10, 5), Point(0,5)]
   rectangle = Rectangle(False)
   print(rectangle.compute_area())
   print(rectangle.compute_perimeter())
@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
   print("#-------------------------------------------------------------------")
 
-  vertices = [Point(5, 5), origen, Point(4, 0)]
+  vertices = [Point(2.5, 4.33), origen, Point(5, 0)]
   equilateral = Equilateral(vertices)
   print(equilateral.compute_area())
   print(equilateral.compute_perimeter())
@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
   print("#-------------------------------------------------------------------")
 
-  vertices = [Point(3, 5), origen, Point(0, 5)]
+  vertices = [Point(0.5, 1), Point(-5, -5), Point(-1,-7)] #https://www.youtube.com/watch?v=0eyUYbB45fo
   isosceles = Isosceles(vertices)
   print(isosceles.compute_area())
   print(isosceles.compute_perimeter())
