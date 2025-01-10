@@ -1,5 +1,5 @@
 class Point:
-  def __init__(self, x:int, y:int):
+  def __init__(self, x:float, y:float): # Saliendome un poco del UML
     self.x = x
     self.y = y
 
