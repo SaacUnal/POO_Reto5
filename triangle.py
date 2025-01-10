@@ -13,7 +13,7 @@ class Triangle(Shape):
 
   def compute_area(self): 
     height = self.compute_height()
-    area = (self.edges[0].length*height)/2
+    area = (self.edges[1].length*height)/2
     return area
 
 class Equilateral(Triangle): # Done
@@ -24,7 +24,7 @@ class Equilateral(Triangle): # Done
     perimeter = self.edges[0].length * 3
     return perimeter
 
-class Isosceles(Triangle):
+class Isosceles(Triangle): # Done
   def __init__(self, vertices:list[Point]):
     super().__init__(vertices, is_regular=False)
   
