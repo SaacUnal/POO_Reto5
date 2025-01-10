@@ -1,4 +1,4 @@
-from shape.shape import Shape, Point, Line
+from shape.shape import Shape, Point
 
 class Triangle(Shape):
   def __init__(self, vertices:list[Point], is_regular:bool):
