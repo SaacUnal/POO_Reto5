@@ -24,7 +24,7 @@ class Shape:
     edges = []
     for i in range(len(self.vertices)):
       x = self.vertices[i] 
-      y = self.vertices[i+1]
+      y = self.vertices[(i+1) % len(self.vertices)]
       edges.append(Line(x, y, Point.compute_distance(x, y)))
     self.edges = edges
   

@@ -14,7 +14,7 @@ if __name__ == "__main__":
   print("#-------------------------------------------------------------------")
 
   vertices = [origen, Point(10, 0), Point(10, 5), Point(0,5)]
-  rectangle = Rectangle(False)
+  rectangle = Rectangle(vertices, False)
   print(rectangle.compute_area())
   print(rectangle.compute_perimeter())
   #print(rectangle.compute_inner_angle())
@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
   print("#-------------------------------------------------------------------")
 
-  vertices = [Point(2.5, 5), origen, Point(0, 5)] # https://www.youtube.com/watch?v=7ZQgjbhyxFk
+  vertices = [Point(3, 3), Point(-2, 1), Point(7, -4)] # https://www.youtube.com/watch?v=7ZQgjbhyxFk
   scalene = Scalene(vertices)
   print(scalene.compute_area())
   print(scalene.compute_perimeter())
