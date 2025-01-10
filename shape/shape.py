@@ -16,12 +16,18 @@ class Line:
 ##############################################################################
 
 class Shape:
-  def __init__(self, is_regular:bool, vertices:list[Point], edges:list[Line], inner_angles:list[float]):
-    self.is_regular = is_regular
+  def __init__(self, vertices:list[Point], is_regular:bool, ):
     self.vertices = vertices
+    self.is_regular = is_regular
+  
+  def compute_edges(self):
+    edges = []
+    for i in range(len(self.vertices)):
+      x = self.vertices[i] 
+      y = self.vertices[i+1]
+      edges.append(Line(x, y, Point.compute_distance(x, y)))
     self.edges = edges
-    self.inner_angles = inner_angles
-
+  
   def compute_area(self):
     raise NotImplementedError("Subclases has to implement compute_area() ")
 

@@ -1,8 +1,8 @@
 from shape.shape import Shape, Point, Line
 
-class Rectangle(shape.Shape):
+class Rectangle(Shape):
   def __init__(self, vertices:list[Point]):
-    super().__init__(is_regular=False)
+    super().__init__(vertices, is_regular=False)
 
   def compute_area(self):
     area = self.edges[0].length * self.edges[1].length
@@ -18,7 +18,7 @@ class Rectangle(shape.Shape):
 
 class Square(Rectangle):
   def __init__(self, vertices:list[Point]):
-    super().__init__(is_regular=True)
+    super().__init__(is_regular=False)
 
   def compute_area(self):
     area = self.edges[0].length ** 2

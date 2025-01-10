@@ -1,6 +1,6 @@
 from shape.shape import Shape, Point, Line
 
-class Triangle(shape.Shape):
+class Triangle(Shape):
   def __init__(self, vertices:list[Point]):
     super().__init__(is_regular=False)
 
@@ -15,7 +15,7 @@ class Triangle(shape.Shape):
 
 class Equilateral(Triangle):
   def __init__(self, vertices:list[Point]):
-    super().__init__(is_regular=True)
+    super().__init__(is_regular=False)
 
   def compute_perimeter(self):
     perimeter = self.edges[0].length * 3
